@@ -13,14 +13,18 @@ None
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
+	# Package
+	mongo_version: 3.4
+
+	# Storage
 	mongo_storage_dbpath: /var/lib/mongodb
 	mongo_storage_journal_enabled: "true"
-	
+
 	# System log
 	mongo_systemlog_destination: "file"
 	mongo_systemlog_append: "true"
 	mongo_systemlog_path: /var/log/mongodb/mongod.log
-	
+
 	# Network
 	mongo_network_port: 27017
 	mongo_network_interfaces:
